@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="http://getskeleton.com/dist/css/normalize.css">
+    <link rel="stylesheet" href="http://getskeleton.com/dist/css/skeleton.css">
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        margin: 100px 0;
+        font-family: 'Inconsolata', monospace;
+        font-size: 14px;
+        color: #dfe1e8;
+        background: #343d46;
+      }
+      #app, div.input-area {
+        height: 100%;
+      }
+      div#main {
+          max-width: 560px;
+          background: wheat;
+          color: black;
+          border-radius: 5px;
+          height: 400px;
+          -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.59);
+          -moz-box-shadow:    0px 0px 13px 0px rgba(50, 50, 50, 0.59);
+          box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.59);
+          overflow: hidden;
+      }
+      .holder {
+          overflow: auto;
+      }
+      .prompt {
+        color: black;
+        background-color: wheat;
+      }
+      input[type=text], input[type=text]:focus {
+        border: none;
+        padding: 0; 
+        margin: 0;
+        height: 22px;
+        background: wheat;
+        color: black;
+        width: 80%;
+      }
+      p { 
+        margin-bottom: 0;
+        line-height: 21px;
+      }
+      #bar {
+        height: 30px;
+        max-width: 560px;
+        background: #272e39;
+        border-radius: 5px;
+        
+      }
+      #content {
+        padding: 20px;
+        height: 100%;
+      }
+
+      #ayy{     
+        position: fixed;
+        font-family: "Comic Sans MS";
+        width: 300px;
+        height: 250px;
+        bottom: -250px;
+        transition: bottom 15s ease;
+        background-repeat: repeat-x;
+        background-image: url("src/Alien_head.gif");    
+      }
+
+      #ayy p{
+        color: magenta;
+        background: rgba(0,0,0,0);
+      }
+
+      
+    </style>
+</head>
+<body>
+      <div id="bar" class='container'>
+        <svg height="20" width="100">
+          <circle cx="24" cy="14" r="5" fill="#bf616a" />
+          <circle cx="44" cy="14" r="5" fill="#ebcb8b" />
+          <circle cx="64" cy="14" r="5" fill="#a3be8c" />
+        </svg>
+        <p3 style={"color:white"}>Raman@Website: ~/<p3>
+      </div>
+    <div class="container" id="main">
+      <div class="holder">
+        <div id="content">
+          <div id="app"></div>
+        </div>
+      </div>
+    </div>
+    <div id="ayy">
+      <p >ayyyyyyyy lmao</p>
+    </div>
+    <script type="text/javascript" src="build/main.min.js"></script>
+</body>
+</html>
