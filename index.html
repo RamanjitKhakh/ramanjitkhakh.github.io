@@ -20,15 +20,21 @@
           max-width: 560px;
           background: wheat;
           color: black;
-          border-radius: 5px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
           height: 400px;
           -webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.59);
           -moz-box-shadow:    0px 0px 13px 0px rgba(50, 50, 50, 0.59);
           box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.59);
-          overflow: hidden;
+          overflow-y: auto;
+          overflow-x: hidden;
       }
       .holder {
           overflow: auto;
+      }
+      ::-webkit-scrollbar {
+
+        color: wheat;
       }
       .prompt {
         color: black;
@@ -49,10 +55,10 @@
       }
       #bar {
         height: 30px;
-        max-width: 560px;
+        max-width: 561px;
         background: #272e39;
-        border-radius: 5px;
-        
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
       }
       #content {
         padding: 20px;
